@@ -1,0 +1,6 @@
+include rules.ninja
+
+build calculator.o: compile calculator.cpp
+build main.o: compile main.cpp
+build libcalculator.a: link calculator.o
+build main: link main.o
